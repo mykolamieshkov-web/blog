@@ -1,0 +1,325 @@
+/*Обнуление*/
+
+*{
+ 
+   padding: 0;
+   
+   margin: 0;
+   
+   border: 0;
+   
+   }
+   
+   * ,*:before,*:after{
+   
+   -moz-box-sizing: border-box;
+   
+   -webkit-box-sizing: border-box;
+   
+   box-sizing: border-box;
+   
+   }
+   
+   :focus,:active{outline: none;}
+   
+   a:focus,a:active{outline: none;}
+   
+   nav,footer,header,aside{display: block;}
+   
+   html,body{
+   
+   height: 100%;
+   
+   width: 100%;
+   
+   font-size: 100%;
+   
+   line-height: 1;
+   
+   font-size: 14px;
+   
+   -ms-text-size-adjust: 100%;
+   
+   -moz-text-size-adjust: 100%;
+   
+   -webkit-text-size-adjust: 100%;
+   
+   }
+   
+   input,button,textarea{font-family:inherit;}
+   
+   input::-ms-clear{display: none;}
+   
+   button{cursor: pointer;}
+   
+   button::-moz-focus-inner {padding:0;border:0;}
+   
+   a, a:visited{text-decoration: none;}
+   
+   a:hover{text-decoration: none;}
+   
+   ul li{list-style: none;}
+   
+   img{vertical-align: top;}
+   
+   h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+   
+   /*--------------------*/
+   body {
+   font-family: 'Poppins', sans-serif;
+   font-style: normal;
+   line-height: normal;
+   color: #495057;
+   font-size: 14px;
+   background-color: #F8F9FA;
+   }
+   .wrapper {
+      width: 100%;
+      max-width: 1440px;
+      height: 100%;
+      min-height: 100%;
+   }
+   .header {
+      width: 100%;
+      max-width: 1440px;
+      top: 0;
+      left: 0;
+      position: fixed;
+      height: 498px;
+      background-image: url("../img/bg/background.jpg");
+   }
+   nav {
+      width: 100%;
+      display: flex;
+      margin-top: 36px;
+      height: 25px;
+      gap: 50%;
+   }
+   nav h1 {
+ color: #F8F9FA;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 25px; 
+float: left;
+margin-left: 100px;
+   }
+ .header_links {
+      display: flex;
+      justify-self: right;
+      justify-content: flex-end;
+      gap: 25px;
+      float: right;
+      height: 30px;
+   }
+   /* ------ */
+.header_links a {
+   color: rgba(248, 249, 250, 0.50);
+font-style: normal;
+font-weight: 500;
+line-height: 25px;
+height: 25px;
+font-size: 16px; 
+ }
+.header_links a:hover {
+   color: #F8F9FA;
+   text-decoration: underline 2px #DDBEA9;
+ }
+ .header_content {
+   margin-top: 264px;
+   margin-left: 100px;
+   width: 605px;
+ }
+ .header_content h2 {
+float: left;
+color: #F8F9FA;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+ }
+ .header_content p {
+   float: left;
+   color: #E5E5E5;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; 
+ }
+   /* медиа-запросы */
+   @media screen and (max-width: 500px) {
+      body {
+         font-size: 12px;
+      }
+      .wrapper {
+         width: 100%;
+         max-width: 500px;
+         margin: 3px;
+       
+      }
+      .header {
+         max-width: 500px;
+         height: 320px;
+         background-size: cover;
+         background-position: center;
+      }
+      nav h1 {
+         color: #F8F9FA;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px; 
+        float: left;
+        margin-left: 30px;
+           }
+           nav {
+            width: 100%;
+            display: flex;
+            margin-top: 15px;
+            height: 25px;
+            justify-content: center;
+            gap: 80px;
+         }
+         .header_links a {
+            font-size: 1.6vw;
+         }
+         .header_content h2 {
+            text-align: center;
+            color: #F8F9FA;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+             }
+             .header_content {
+               margin-top: 100px;
+               margin-left: 30px;
+               width:100%;
+             }
+             .header_content h2 {
+               text-align: center;
+               color: #F8F9FA;
+               font-size: 16px;
+               font-style: normal;
+               font-weight: 700;
+               line-height: 40px;
+                }
+                .header_content {
+                  margin-top: 100px;
+                  margin-left: 30px;
+                  width:100%;
+                  margin-right: 30px;
+                }
+                .header_content p {
+                  text-align: center;
+                  font-size: 14px;
+                }
+   }
+   
+  
+   @media screen and (max-width:414px) {
+      body {
+         font-size: 1.6vw;
+      }
+      .wrapper {
+         width: 100%;
+         max-width: 414px;
+         margin: 0px auto;
+         display: block;
+         padding: 1px; 
+      }
+      .header {
+         max-width: 414px;
+         height: 300px;
+         background-size: cover;
+         background-position: center;
+      }
+      nav h1 {
+         color: #F8F9FA;
+        font-size: 1.8vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px; 
+        float: left;
+        margin-left: 15px;
+           }
+           nav {
+            margin-top: 10px;
+            justify-content: center;
+            gap: 80px;
+           }
+           .header_links a {
+            font-size: 1.6vw;
+         }
+         .header_content h2 {
+            text-align: center;
+            color: #F8F9FA;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+             }
+             .header_content {
+               margin-top: 100px;
+               margin-left: 30px;
+               width:100%;
+               margin-right: 30px;
+             }
+             .header_content p {
+               text-align: center;
+               font-size: 12px;
+             }
+   }
+   @media screen and (max-width:390px) {
+      .wrapper {
+         width: 100%;
+         max-width: 390px;
+         margin: 0px auto;
+         display: block;
+         padding: 1px; 
+      }
+      .header {
+         max-width: 390px;
+         height: 300px;
+         background-size: cover;
+         background-position: center;
+         min-width: 390px;
+      }
+      nav {
+         margin-top: 10px;
+         justify-content: center;
+            gap: 80px;
+        }
+        nav h1 {
+         color: #F8F9FA;
+        font-size: 1.8vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px; 
+        float: left;
+        margin-left: 10px;
+           } 
+           .header_links a {
+            font-size: 1.6vw;
+         }
+         .header_content h2 {
+            text-align: center;
+            color: #F8F9FA;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+             }
+             .header_content {
+               margin-top: 100px;
+               margin-left: 30px;
+               width:100%;
+               margin-right: 30px;
+             }
+             .header_content p {
+               text-align: center;
+               font-size: 12px;
+             }
+       
+   }
+   /* ------- */
