@@ -146,8 +146,86 @@ font-style: normal;
 font-weight: 300;
 line-height: 20px; 
  }
+ .main {
+   width: 100%;
+   max-width: 1440px;
+   display: block;
+   height: 100vh;
+   min-height: 100vh;
+   padding-top: 200px;
+  margin: 0 auto;
+ }
    /* медиа-запросы */
-   @media screen and (max-width: 500px) {
+   @media screen and (max-width: 736px ) and (orientation: landscape) {
+      body {
+         font-size: 12px;
+      }
+      .wrapper {
+         width: 100%;
+         max-width: 736px;
+         margin: 3px;
+       
+      }
+      .header {
+         max-width: 736px;
+         height: 320px;
+         background-size: cover;
+         background-position: center;
+      }
+      nav h1 {
+         color: #F8F9FA;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px; 
+        float: left;
+        margin-left: 30px;
+           }
+           nav {
+            width: 100%;
+            display: flex;
+            margin-top: 15px;
+            height: 25px;
+            justify-content: center;
+            gap: 80px;
+         }
+         .header_links a {
+            font-size: 1.6vw;
+         }
+         .header_content h2 {
+            text-align: center;
+            color: #F8F9FA;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+             }
+             .header_content {
+               margin-top: 100px;
+               margin-left: 30px;
+               width:100%;
+             }
+             .header_content h2 {
+               text-align: center;
+               color: #F8F9FA;
+               font-size: 16px;
+               font-style: normal;
+               font-weight: 700;
+               line-height: 40px;
+                }
+                .header_content {
+                  margin-top: 100px;
+                  margin-left: 30px;
+                  width:100%;
+                  margin-right: 30px;
+                }
+                .header_content p {
+                  text-align: center;
+                  font-size: 14px;
+                }
+   }
+   
+   @media screen and (max-width: 500px)  {
       body {
          font-size: 12px;
       }
@@ -270,7 +348,7 @@ line-height: 20px;
                font-size: 12px;
              }
    }
-   @media screen and (max-width:390px) {
+   @media screen and (max-width:390px)  {
       .wrapper {
          width: 100%;
          max-width: 390px;
